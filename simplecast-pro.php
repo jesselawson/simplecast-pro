@@ -5,7 +5,7 @@
  * Plugin Name:       Simplecast Pro
  * Plugin URI:        https://github.com/lawsonry/simplecast-pro
  * Description:       Shortcodes for integrating your Simplecast-hosted podcast into your WordPress site.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Jesse Lawson <jesse@lawsonry.com>
  * Author URI:        https://lawsonry.com
  * License:           GPL-2.0+
@@ -23,7 +23,7 @@ if(!class_exists('WP_Http')) {
 	include_once(ABSPATH . WPINC . '/class-http.php');
 }
 
-define( 'SIMPLECAST_PRO_VERSION', '1.0.0' );
+define( 'SIMPLECAST_PRO_VERSION', '1.0.1' );
 
 //
 // GITHUB UPDATER (so we're not dependent on the WordPress theme repo)
@@ -72,7 +72,7 @@ function simplecast_pro_settings_init() {
 add_action( 'admin_init', 'simplecast_pro_settings_init' );
  
 function simplecast_pro_settings_section_callback() {
-	 echo '<p>This plugin by <a href="https://lawsonry.com">Jesse Lawson</a> is 100% free and open source. If you want to help support this plugin and all of Jesse\'s work, <a href="https://www.patreon.com/jesselawson">become a patron</a> for as little as $1/month. For help getting started with the Simplecast Pro plugin, head over to <a href="https://lawsonry.com/simplecast-pro-plugin">Jesse\'s website</a>.</p>
+	 echo '<p>This plugin by <a href="https://lawsonry.com">Jesse Lawson</a> is 100% free and open source. If you want to help support this plugin and all of Jesse\'s work, <a href="https://www.patreon.com/jesselawson">become a patron</a> for as little as $1/month. For help getting started with the Simplecast Pro plugin, head over to <a href="https://lawsonry.com/simplecast-pro-plugin">Jesse\'s website</a>. <strong>Note: You must have a Simplecast API key.</strong> <a href="https://simplecast.com/user/edit">Click here</a> to go to your Simplecast account and generate one.</p>
 	 ';
 }
  
